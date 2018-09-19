@@ -1,0 +1,21 @@
+.heading {
+  margin: 1rem 0;
+  color: #222222;
+
+  &_1 {
+    font: normal normal 6rem 'PT Sans', $basic-font-stack;
+    line-height: 2rem;
+  }
+
+  &_2 {
+    font: normal $semibold-weight 2.2rem 'Raleway', $basic-font-stack;
+  }
+
+  &_3 {
+    font: normal $semibold-weight 2.4rem 'Raleway', $basic-font-stack;
+  }
+
+  &_4 {
+    font: normal bold 1.8rem 'Raleway', $basic-font-stack;
+  }
+}

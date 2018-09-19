@@ -1,0 +1,77 @@
+.header {
+  background: url('../img/bg.jpg') center/cover no-repeat;
+  border-top: 1rem solid #2ecc71;
+  color: white;
+
+  &__container {
+    padding: 0 0 0 12rem;
+  }
+
+  &__heading {
+    margin: 19rem 0 0 0;
+    color: white;
+  }
+
+  &__subheading {
+    font: normal normal 2.4rem 'PT Sans', $basic-font-stack;
+    line-height: 3.6rem;
+    margin: 6.7rem 0 0 0;
+    max-width: 45rem;
+  }
+
+  &__dot {
+    color: #2ecc71;
+  }
+
+  &__platform-menu {
+    margin: 2.4rem 0 17.8rem 0;
+
+    &-item {
+      display: inline-block;
+      margin: 0 1.5rem 0 0;
+      background: #362219;
+      opacity: .5;
+      box-sizing: border-box;
+      width: 5rem;
+      height: 5rem;
+      line-height: 5rem;
+      text-align: center;
+      border-radius: 50%;
+
+
+      &:hover {
+        background: #2ecc71;
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__platform-link {
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: $smaller-break-point) {
+    text-align: center;
+
+    &__container {
+      padding: 0 1rem;
+    }
+
+    &__subheading {
+      margin: {
+        left: auto;
+        right: auto;
+      }
+    }
+
+    &__heading {
+      margin-top: 10rem;
+    }
+  }
+
+  &__platform-menu {
+    margin-bottom: 10rem;
+  }
+}

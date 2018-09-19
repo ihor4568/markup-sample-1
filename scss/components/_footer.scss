@@ -1,0 +1,33 @@
+.footer {
+  background: #e3e3e3;
+  text-align: center;
+
+  &__menu {
+    margin: 5.7rem 0 5.3rem;
+
+    &-item {
+      display: inline-block;
+      margin: 0 3rem 0 0;
+    }
+  }
+
+  &__link {
+    color: #848484;
+    font: normal normal 1.6rem 'PT Sans', $basic-font-stack;
+    text-transform: capitalize;
+  }
+
+  @media only screen and (max-width: $smaller-break-point) {
+    &__menu {
+      margin: 2rem auto;
+
+      &-item {
+        display: block;
+        margin: {
+          bottom: 2rem;
+          right: 0;
+        }
+      }
+    }
+  }
+}

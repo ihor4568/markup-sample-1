@@ -1,0 +1,67 @@
+$image-size: 50px;
+$gap-size: 5px;
+
+@function calcPersonX($i) {
+  @return -1*$image-size*$i - $gap-size*$i;
+}
+
+.connect {
+  text-align: center;
+  margin: 3.4rem 0 4.1rem 0;
+
+  &__quote {
+    margin: 2rem auto 0;
+    max-width: 82rem;
+  }
+
+  &__heading-4 {
+    margin: 1.6rem 0 2.6rem 0;
+  }
+
+  &__image-menu {
+    margin: 0 0 5.1rem 0;
+
+    &-item {
+      display: inline-block;
+      margin: 0 .23rem 0 0;
+      width: $image-size;
+      height: $image-size;
+
+      @for $i from 0 through 18 {
+        &:nth-child(#{$i + 1}) {
+          background: url('../img/people.png') calcPersonX($i) 0;
+        }
+      }
+    }
+  }
+
+  &__social-menu {
+    margin: 0 0 2rem 0;
+
+    &-item {
+      display: inline-block;
+      background: #d4d4d4;
+      border-radius: 50%;
+      box-sizing: border-box;
+      margin: 0 .5rem 0 0;
+      width: 3.5rem;
+      height: 3.5rem;
+      line-height: 3.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+
+      &:hover {
+        background: #62d995;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__link {
+    color: white;
+  }
+
+  &__text {
+    margin: 1.8rem 0 1.8rem 0;
+  }
+}

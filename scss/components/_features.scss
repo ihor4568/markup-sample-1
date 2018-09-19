@@ -1,0 +1,50 @@
+.features {
+  &__heading {
+    margin: 2.5rem 0 2rem;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 5.8rem 0 3.8rem;
+
+    &-item {
+      text-align: center;
+      flex-basis: 27.1%;
+      font-size: 5rem;
+      color: white;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    background: #2ecc71;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: $large-break-point) {
+    &__menu {
+      &-item {
+        flex-basis: 30%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $smaller-break-point) {
+    &__menu {
+      flex-flow: column nowrap;
+      text-align: justify;
+      margin-bottom: 0;
+
+      &-item {
+        flex-basis: auto;
+        max-width: 30rem;
+        margin: 0 auto 5rem;
+      }
+    }
+  }
+}
